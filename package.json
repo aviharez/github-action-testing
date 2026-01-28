@@ -1,0 +1,28 @@
+{
+  "name": "heritage-heart-transition-tracker",
+  "version": "1.0.0",
+  "description": "Automated deployment pipeline for Heritage Heart Senior Move Managers Transition Progress Tracker",
+  "main": "index.html",
+  "scripts": {
+    "lint:html": "htmlhint '**/*.html'",
+    "lint:css": "stylelint '**/*.css'",
+    "lint:js": "eslint '**/*.js'",
+    "lint": "npm run lint:html && npm run lint:css && npm run lint:js",
+    "serve": "npx http-server . -p 8080 -o"
+  },
+  "keywords": [
+    "senior-care",
+    "move-management",
+    "checklist",
+    "ci-cd",
+    "github-actions"
+  ],
+  "author": "Heritage Heart Senior Move Managers",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.2.1",
+    "stylelint-config-standard": "^36.0.0"
+  }
+}
